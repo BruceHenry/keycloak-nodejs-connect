@@ -153,6 +153,12 @@ Config.prototype.configure = function configure (config) {
     */
   const plainKey = resolveValue(config['realm-public-key'] || config.realmPublicKey);
 
+  /**
+    * list of issuers.
+    * @type {String[]}
+    */
+   const issuers = config['issuers'] || [];
+
   if (plainKey) {
     this.publicKey = '-----BEGIN PUBLIC KEY-----\n';
     for (let i = 0; i < plainKey.length; i = i + 64) {
