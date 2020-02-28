@@ -1,5 +1,5 @@
 {
-  "name": "keycloak-connect",
+  "name": "keycloak-connect-multi-issuers",
   "version": "8.0.2",
   "description": "Keycloak Connect Middleware",
   "homepage": "http://keycloak.org",
@@ -28,8 +28,7 @@
   ],
   "typings": "keycloak.d.ts",
   "author": {
-    "name": "Red Hat, Inc.",
-    "url": "http://keycloak.org"
+    "name": "Di Zou"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -71,7 +70,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/keycloak/keycloak-nodejs-connect.git"
+    "url": "https://github.com/zodiac1214/keycloak-nodejs-connect.git"
   },
-  "bugs": "https://github.com/keycloak/keycloak-nodejs-connect/issues"
+  "bugs": "https://github.com/zodiac1214/keycloak-nodejs-connect/issues"
 }
