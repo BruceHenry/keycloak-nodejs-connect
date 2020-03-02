@@ -157,7 +157,7 @@ Config.prototype.configure = function configure (config) {
     * list of issuers.
     * @type {String[]}
     */
-   const issuers = config['issuers'] || [];
+  this.issuers = config['issuers'] || [];
 
   if (plainKey) {
     this.publicKey = '-----BEGIN PUBLIC KEY-----\n';
