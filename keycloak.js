@@ -414,7 +414,7 @@ Keycloak.prototype.getAccount = function (token) {
 };
 
 Keycloak.prototype.redirectToLogin = function (request) {
-  return !this.config.bearerOnly;
+  return false;
 };
 
 Keycloak.prototype.getConfig = function () {
