@@ -60,7 +60,7 @@ module.exports = function (keycloak, spec) {
     if (keycloak.redirectToLogin(request)) {
       forceLogin(keycloak, request, response);
     } else {
-      return keycloak.accessDenied(request, response, next);
+      return keycloak.unauthorized(request, response, next);
     }
   };
 };

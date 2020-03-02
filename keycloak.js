@@ -302,6 +302,11 @@ Keycloak.prototype.accessDenied = function (request, response) {
   response.end('Access denied');
 };
 
+Keycloak.prototype.unauthorized = function (request, response) {
+  response.status(401);
+  response.end('Unauthorized');
+};
+
 /*! ignore */
 Keycloak.prototype.getGrant = function (request, response) {
   var rawData;
